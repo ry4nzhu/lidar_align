@@ -18,7 +18,7 @@ find_path(NLOPT_INCLUDE_DIR
   NAMES nlopt.h
   PATHS ${NLOPT_PREFIX}
         ${NLOPT_ROOT}
-        "${CMAKE_SOURCE_DIR}/../external/nlopt"
+        "${CMAKE_SOURCE_DIR}/../../../nlopt"
   PATH_SUFFIXES "nlopt" "include/nlopt" "include" "SRC" "src" "api"
   NO_DEFAULT_PATH
 )
@@ -35,7 +35,7 @@ find_library(NLOPT_LIBRARY
   PATHS ${NLOPT_PREFIX}
         ${NLOPT_ROOT}
         ${NLOPT_ROOT}
-        "${CMAKE_SOURCE_DIR}/../external/nlopt"
+        "${CMAKE_SOURCE_DIR}/../../../nlopt"
   PATH_SUFFIXES "lib" "lib32" "lib64" "libnlopt" ".libs"
   NO_DEFAULT_PATH
 )

@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(lidar_align)
 
-add_definitions(-std=c++11 -ofast)
+add_definitions(-std=c++14)
 
 find_package(catkin REQUIRED COMPONENTS
   roscpp
@@ -15,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
 
 # NLOPT is frustratingly inconsistent in the name of its cmake file so we use our own
 list(APPEND CMAKE_FIND_ROOT_PATH ${CMAKE_SOURCE_DIR})
+set(NLOPT_DIR ./)
 find_package(NLOPT REQUIRED)
 
 include_directories(

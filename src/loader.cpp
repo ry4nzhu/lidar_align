@@ -176,6 +176,7 @@ bool Loader::getNextCSVTransform(std::istream& str, Timestamp* stamp,
                                  Transform* T) {
   std::string line;
   std::getline(str, line);
+  // std::cout << "get line: " << line << std::endl;
 
   // ignore comment lines
   if (line[0] == '#') {
